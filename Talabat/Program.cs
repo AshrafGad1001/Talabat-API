@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Talabat.Repositery.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,22 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 
+
+using (var scope = builder.Services.BuildServiceProvider().CreateScope())
+{
+    var loggerFactory = scope.ServiceProvider.GetRequiredService<ILoggerFactory>();
+
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    // Migrate asynchronously
+    await dbContext.Database.MigrateAsync();
+    // Ensure the database is created and apply any pending migrations
+    // Add your migration logic here (if needed)
+
+    await AppContextSeed.SeedAsync(dbContext, loggerFactory);
+
+    await dbContext.Database.EnsureCreatedAsync();
+    // Ensure the database is created if it doesn't exist asynchronously
+}
 
 var app = builder.Build();
 

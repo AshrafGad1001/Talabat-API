@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "QlELF8RB0XnCj4VkWOXz/cpltwdVEIRgIJRvzCrohCE=",
-  "Source": "Talabat",
-  "BasePath": "_content/Talabat",
+  "Hash": "4kzaicL5MiTrg/h2PcU8atyeKrFZuLAbvFa1m4hSu4A=",
+  "Source": "Talabat.APIs",
+  "BasePath": "_content/Talabat.APIs",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

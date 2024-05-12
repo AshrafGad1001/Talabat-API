@@ -1,0 +1,162 @@
+[
+  {
+    "Name": "Apple",
+    "Description": "Fresh and juicy apple",
+    "Price": 2.5,
+    "PictureUrl": "images/products/apple.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Banana",
+    "Description": "Ripe and nutritious banana",
+    "Price": 1.2,
+    "PictureUrl": "images/products/banana.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Orange",
+    "Description": "Sweet and tangy orange",
+    "Price": 1.8,
+    "PictureUrl": "images/products/orange.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Milk",
+    "Description": "Fresh dairy milk",
+    "Price": 3.5,
+    "PictureUrl": "images/products/milk.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Bread",
+    "Description": "Soft and fluffy bread loaf",
+    "Price": 2.0,
+    "PictureUrl": "images/products/bread.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Chicken",
+    "Description": "Premium chicken breast",
+    "Price": 7.0,
+    "PictureUrl": "images/products/chicken.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Eggs",
+    "Description": "Farm-fresh eggs",
+    "Price": 2.8,
+    "PictureUrl": "images/products/eggs.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Salmon",
+    "Description": "Delicious and healthy salmon fillet",
+    "Price": 10.5,
+    "PictureUrl": "images/products/salmon.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Rice",
+    "Description": "High-quality rice grains",
+    "Price": 4.5,
+    "PictureUrl": "images/products/rice.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Tomato",
+    "Description": "Fresh and flavorful tomato",
+    "Price": 1.0,
+    "PictureUrl": "images/products/tomato.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Potato",
+    "Description": "Versatile and nutritious potato",
+    "Price": 1.5,
+    "PictureUrl": "images/products/potato.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Cheese",
+    "Description": "Creamy and delicious cheese",
+    "Price": 5.0,
+    "PictureUrl": "images/products/cheese.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Carrot",
+    "Description": "Crunchy and sweet carrot",
+    "Price": 0.8,
+    "PictureUrl": "images/products/carrot.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Spinach",
+    "Description": "Nutrient-rich spinach leaves",
+    "Price": 1.2,
+    "PictureUrl": "images/products/spinach.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Yogurt",
+    "Description": "Creamy and probiotic-rich yogurt",
+    "Price": 2.2,
+    "PictureUrl": "images/products/yogurt.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Broccoli",
+    "Description": "Nutritious and delicious broccoli florets",
+    "Price": 1.8,
+    "PictureUrl": "images/products/broccoli.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Cucumber",
+    "Description": "Cool and refreshing cucumber",
+    "Price": 0.9,
+    "PictureUrl": "images/products/cucumber.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Pasta",
+    "Description": "Traditional Italian pasta",
+    "Price": 3.0,
+    "PictureUrl": "images/products/pasta.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Avocado",
+    "Description": "Creamy and nutritious avocado",
+    "Price": 2.3,
+    "PictureUrl": "images/products/avocado.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Lettuce",
+    "Description": "Crisp and fresh lettuce leaves",
+    "Price": 1.2,
+    "PictureUrl": "images/products/lettuce.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  }
+]

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talabat", "Talabat.csproj", "{58F4302E-7DCA-4B96-B798-9186ECD60168}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talabat.APIs", "Talabat.APIs.csproj", "{58F4302E-7DCA-4B96-B798-9186ECD60168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talabat.core", "..\Talabat.core\Talabat.core.csproj", "{8896B37A-BC7B-423C-AB2A-5BD4280A56CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talabat.core", "..\Talabat.core\Talabat.core.csproj", "{8896B37A-BC7B-423C-AB2A-5BD4280A56CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talabat.Repositery", "..\Talabat.Repositery\Talabat.Repositery.csproj", "{17A1227B-7E89-4B9F-892C-3E091F8FA93A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talabat.Repositery", "..\Talabat.Repositery\Talabat.Repositery.csproj", "{17A1227B-7E89-4B9F-892C-3E091F8FA93A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talabat.Service", "..\Talabat.Service\Talabat.Service.csproj", "{89113714-4870-42CB-9B0D-A7426F760C24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talabat.Service", "..\Talabat.Service\Talabat.Service.csproj", "{89113714-4870-42CB-9B0D-A7426F760C24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
