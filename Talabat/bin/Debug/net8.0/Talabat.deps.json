@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Tools": "8.0.4",
           "Swashbuckle.AspNetCore": "6.5.0",
-          "Talabat.Repositery": "1.0.0"
+          "Talabat.Repository": "1.0.0"
         },
         "runtime": {
           "Talabat.dll": {}
@@ -909,14 +909,14 @@
           "Talabat.core.dll": {}
         }
       },
-      "Talabat.Repositery/1.0.0": {
+      "Talabat.Repository/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4",
           "Talabat.core": "1.0.0"
         },
         "runtime": {
-          "Talabat.Repositery.dll": {}
+          "Talabat.Repository.dll": {}
         }
       }
     }
@@ -1506,7 +1506,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Talabat.Repositery/1.0.0": {
+    "Talabat.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

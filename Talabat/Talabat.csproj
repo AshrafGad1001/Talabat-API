@@ -19,8 +19,4 @@
     <ProjectReference Include="..\Talabat.Repositery\Talabat.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

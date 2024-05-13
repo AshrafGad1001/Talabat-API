@@ -114,15 +114,12 @@ F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\runtim
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Talabat.core.dll
-F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Talabat.Repositery.dll
-F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Talabat.Repositery.pdb
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Talabat.core.pdb
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.csproj.AssemblyReference.cache
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.GeneratedMSBuildEditorConfig.editorconfig
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.AssemblyInfoInputs.cache
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.AssemblyInfo.cs
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.csproj.CoreCompileInputs.cache
-F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.MvcApplicationPartsAssemblyInfo.cs
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.MvcApplicationPartsAssemblyInfo.cache
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.sourcelink.json
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\staticwebassets.build.json
@@ -139,3 +136,5 @@ F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\refint
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.pdb
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.genruntimeconfig.cache
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\ref\Talabat.dll
+F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Talabat.Repository.dll
+F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Talabat.Repository.pdb

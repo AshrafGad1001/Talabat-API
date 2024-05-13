@@ -10,3 +10,7 @@ F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\obj\Debug\net8.0\T
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\obj\Debug\net8.0\refint\Talabat.core.dll
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\obj\Debug\net8.0\Talabat.core.pdb
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\obj\Debug\net8.0\ref\Talabat.core.dll
+F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\bin\Debug\net8.0\Talabat.Repositery.dll
+F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\bin\Debug\net8.0\Talabat.Repositery.pdb
+F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\obj\Debug\net8.0\Talabat.core.csproj.AssemblyReference.cache
+F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.core\obj\Debug\net8.0\Talabat.core.csproj.CopyComplete
