@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Talabat.Repositery">
+      <HintPath>..\Talabat.Repositery\bin\Debug\net8.0\Talabat.Repositery.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

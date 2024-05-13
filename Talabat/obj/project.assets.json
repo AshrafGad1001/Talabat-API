@@ -1600,7 +1600,7 @@
           "bin/placeholder/Talabat.core.dll": {}
         }
       },
-      "Talabat.Repositery/1.0.0": {
+      "Talabat.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1609,10 +1609,10 @@
           "Talabat.core": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Talabat.Repositery.dll": {}
+          "bin/placeholder/Talabat.Repository.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Talabat.Repositery.dll": {}
+          "bin/placeholder/Talabat.Repository.dll": {}
         }
       }
     }
@@ -4552,17 +4552,17 @@
       "path": "../Talabat.core/Talabat.core.csproj",
       "msbuildProject": "../Talabat.core/Talabat.core.csproj"
     },
-    "Talabat.Repositery/1.0.0": {
+    "Talabat.Repository/1.0.0": {
       "type": "project",
-      "path": "../Talabat.Repositery/Talabat.Repositery.csproj",
-      "msbuildProject": "../Talabat.Repositery/Talabat.Repositery.csproj"
+      "path": "../Talabat.Repositery/Talabat.Repository.csproj",
+      "msbuildProject": "../Talabat.Repositery/Talabat.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.4",
       "Swashbuckle.AspNetCore >= 6.5.0",
-      "Talabat.Repositery >= 1.0.0"
+      "Talabat.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4571,9 +4571,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.APIs.csproj",
-      "projectName": "Talabat.APIs",
-      "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.APIs.csproj",
+      "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.csproj",
+      "projectName": "Talabat",
+      "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.csproj",
       "packagesPath": "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\",
       "outputPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\obj\\",
       "projectStyle": "PackageReference",
@@ -4592,8 +4592,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj": {
-              "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj"
+            "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj": {
+              "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj"
             }
           }
         }

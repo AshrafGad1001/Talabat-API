@@ -59,12 +59,12 @@
         }
       }
     },
-    "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj": {
+    "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj",
-        "projectName": "Talabat.Repositery",
-        "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj",
+        "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj",
+        "projectName": "Talabat.Repository",
+        "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj",
         "packagesPath": "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\",
         "outputPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\obj\\",
         "projectStyle": "PackageReference",
@@ -164,8 +164,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj": {
-                "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj"
+              "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj": {
+                "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj"
               }
             }
           }

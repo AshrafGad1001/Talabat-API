@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q/Rn5cAVPjNtG+M0bKHNAgCa+vGWmXKGME5TQljDhaM6Rg3r0yMOzLSgE52jdZRgZonFXyEZ6FW0InLr43we2Q==",
+  "dgSpecHash": "XJZBgfWVjZW05fwtvB44Qrp1N3mAqBDMl7y3Ot6uINO+/8VlS2Vv6MKU2fQ55IJkw8Qiv9NmWjqLPWgRhrnl+w==",
   "success": true,
-  "projectFilePath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj",
+  "projectFilePath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

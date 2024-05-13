@@ -4128,9 +4128,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj",
-      "projectName": "Talabat.Repositery",
-      "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repositery.csproj",
+      "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj",
+      "projectName": "Talabat.Repository",
+      "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\Talabat.Repository.csproj",
       "packagesPath": "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\",
       "outputPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Repositery\\obj\\",
       "projectStyle": "PackageReference",
