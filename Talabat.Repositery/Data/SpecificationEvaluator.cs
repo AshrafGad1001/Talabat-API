@@ -1,11 +1,4 @@
-﻿using Azure.Core.Pipeline;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
 using Talabat.core.Entities;
 using Talabat.core.Specifications;
 
@@ -13,19 +6,23 @@ namespace Talabat.Repository.Data
 {
     public class SpecificationEvaluator<TEntity> where TEntity : BaseEntity
     {
-        public IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity> Spec)
+        public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity> spec)
         {
-            var Query = inputQuery;//_context.Set<TEntity>() [ Such...Product]
+            var query = inputQuery;//_context.Set<TEntity>() [ Such...Product]
 
-            if (Spec is not null) //p => p.Id == id
+            if (spec != null) //p => p.Id == id
             {
-                Query = Query.Where(Spec.Criteria);
+                if (spec.Criteria != null)
+                {
+                    query = query.Where(spec.Criteria);
+
+                } 
+                if (spec.Includes != null)
+                {
+                    query = spec.Includes.Aggregate(query, (currentQuery, includeExpression) => currentQuery.Include(includeExpression));
+                }
             }
-
-            Query = Spec.Includes.Aggregate(Query, (currentQuery,includeExpression)=>currentQuery.Include(includeExpression));
-
-
-            return Query;
+            return query;
         }
     }
 }

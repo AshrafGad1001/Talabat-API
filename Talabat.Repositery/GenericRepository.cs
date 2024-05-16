@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Talabat.core.Entities;
 using Talabat.core.Repositorires;
+using Talabat.core.Specifications;
 using Talabat.Repositery.Data;
+using Talabat.Repository.Data;
 
 namespace Talabat.Repository
 {
@@ -16,16 +18,27 @@ namespace Talabat.Repository
         {
             if (typeof(T) == typeof(Product))
             {
-                return (IEnumerable<T>) await _context.Set<Product>().Include(p=>p.ProductBrand)
+                return (IEnumerable<T>)await _context.Set<Product>().Include(p => p.ProductBrand)
                                                     .Include(P => P.ProductType)
                                                     .ToListAsync();
             }
             return await _context.Set<T>().ToListAsync();
         }
-
         public Task<T> GetByIdAsync(int id)
         {
-            return _context.Set<T>().Where(item => item.Id == id).FirstOrDefaultAsync() ;
+            return _context.Set<T>().Where(item => item.Id == id).FirstOrDefaultAsync();
+        }
+        public async Task<IEnumerable<T>> GetAllWithSpecAsync(ISpecification<T> Spec)
+        {
+            return await ApplySpecification(Spec).ToListAsync();
+        }
+        public async Task<T> GetByIdWithSpecAsync(ISpecification<T> Spec)
+        {
+            return await ApplySpecification(Spec).FirstOrDefaultAsync();
+        }
+        private IQueryable<T> ApplySpecification(ISpecification<T> Spec)
+        {
+            return SpecificationEvaluator<T>.GetQuery(_context.Set<T>(), Spec);
         }
     }
 }
