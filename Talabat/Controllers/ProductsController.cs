@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Talabat.core.Entities;
 using Talabat.core.Repositorires;
 using Talabat.core.Specifications;
+using Talabat.DTOs;
 
 namespace Talabat.Controllers
 {
@@ -10,27 +12,31 @@ namespace Talabat.Controllers
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _ProductRepo;
-        public ProductsController(IGenericRepository<Product> ProductRepo)
+
+        public readonly IMapper _mapper;
+
+        public ProductsController(IGenericRepository<Product> ProductRepo, IMapper mapper)
         {
             _ProductRepo = ProductRepo;
+            _mapper = mapper;
         }
 
         //Api/Controller
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts()
         {
             var spec = new ProductBrandandTypeSpecification();
 
             var Products = await _ProductRepo.GetAllWithSpecAsync(spec);
-            return Ok(Products);
+            return Ok(_mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(Products));
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProductById(int id)
+        public async Task<ActionResult<ProductDTO>> GetProductById(int id)
         {
             var spec = new ProductBrandandTypeSpecification(id);
             var product = await _ProductRepo.GetByIdWithSpecAsync(spec);
 
-            return Ok(product);
+            return Ok(_mapper.Map<Product, ProductDTO>(product));
         }
     }
 }

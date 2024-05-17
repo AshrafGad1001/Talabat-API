@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Talabat.core.Repositorires;
+using Talabat.Helpers;
 using Talabat.Repositery.Data;
 using Talabat.Repository;
 
@@ -39,6 +40,11 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
     await dbContext.Database.EnsureCreatedAsync();
     // Ensure the database is created if it doesn't exist asynchronously
 }
+
+
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
+
+
 
 var app = builder.Build();
 
