@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "QlELF8RB0XnCj4VkWOXz/cpltwdVEIRgIJRvzCrohCE=",
+  "Hash": "GD9LdUjSOwp+hrRC0wWP/YICUPoEo+z3eOnYqSCcYSI=",
   "Source": "Talabat",
   "BasePath": "_content/Talabat",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Talabat\\wwwroot",
+      "Source": "Talabat",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "BasePath": "_content/Talabat",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

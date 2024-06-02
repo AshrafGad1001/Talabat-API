@@ -142,3 +142,4 @@ F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\AutoMa
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\obj\Debug\net8.0\Talabat.MvcApplicationPartsAssemblyInfo.cs
+F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat\bin\Debug\net8.0\Talabat.staticwebassets.runtime.json
