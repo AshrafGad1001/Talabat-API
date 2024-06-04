@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nqk7GTIR89Z3/j/1MkeydGAMKeSAHY3lsabru/MUTbk2NfxxypjBk7uSvhkMItbKdl4bwQN3b1kFoYZc8QdmJg==",
+  "dgSpecHash": "KT/T5rTRZDCz29Q33VKfdkRRBw70N7rDRgANSEnBGTgdIrELLpbRY2J1Ndi+uA3Wm5wfewilbry8kZfXHPo0TA==",
   "success": true,
-  "projectFilePath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.csproj",
+  "projectFilePath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.APIs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

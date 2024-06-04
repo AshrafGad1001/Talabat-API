@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Talabat.APIs.Errors;
 using Talabat.core.Entities;
 using Talabat.core.Repositorires;
 using Talabat.core.Specifications;
@@ -35,7 +36,10 @@ namespace Talabat.Controllers
         {
             var spec = new ProductBrandandTypeSpecification(id);
             var product = await _ProductRepo.GetByIdWithSpecAsync(spec);
-
+            if (product == null)
+            {
+                return NotFound(new ApiResponse(404));
+            }
             return Ok(_mapper.Map<Product, ProductDTO>(product));
         }
     }

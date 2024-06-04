@@ -4438,9 +4438,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.csproj",
-      "projectName": "Talabat",
-      "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.csproj",
+      "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.APIs.csproj",
+      "projectName": "Talabat.APIs",
+      "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\Talabat.APIs.csproj",
       "packagesPath": "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\",
       "outputPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\obj\\",
       "projectStyle": "PackageReference",
