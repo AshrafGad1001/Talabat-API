@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Talabat.APIs.Errors;
+using Talabat.APIs.Middlewares;
 using Talabat.core.Repositorires;
 using Talabat.Helpers;
 using Talabat.Repositery.Data;
@@ -64,6 +65,8 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
