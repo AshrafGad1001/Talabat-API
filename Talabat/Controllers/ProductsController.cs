@@ -13,13 +13,19 @@ namespace Talabat.Controllers
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _ProductRepo;
-
+        private readonly IGenericRepository<ProductBrand> _brandsRepo;
+        private readonly IGenericRepository<ProductType> _typesRepo;
         public readonly IMapper _mapper;
 
-        public ProductsController(IGenericRepository<Product> ProductRepo, IMapper mapper)
+        public ProductsController(IGenericRepository<Product> ProductRepo
+           , IGenericRepository<ProductBrand> brandsRepo,
+            IGenericRepository<ProductType> typesRepo, IMapper mapper)
+
         {
-            _ProductRepo = ProductRepo;
-            _mapper = mapper;
+            this._ProductRepo = ProductRepo;
+            this._brandsRepo = brandsRepo;
+            this._typesRepo = typesRepo;
+            this._mapper = mapper;
         }
 
         //Api/Controller
@@ -42,5 +48,19 @@ namespace Talabat.Controllers
             }
             return Ok(_mapper.Map<Product, ProductDTO>(product));
         }
+
+        [HttpGet("brands")]
+        public async Task<ActionResult<IEnumerable<ProductBrand>>> GetBrands()
+        {
+            var brands = await _brandsRepo.GetAllAsync();
+            return Ok(brands);
+        }
+        [HttpGet("types")]
+        public async Task<ActionResult<IEnumerable<ProductBrand>>> GetTypes()
+        {
+            var types = await _typesRepo.GetAllAsync();
+            return Ok(types);
+        }
+
     }
 }
