@@ -30,9 +30,9 @@ namespace Talabat.Controllers
 
         //Api/Controller
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts(string sort)
         {
-            var spec = new ProductBrandandTypeSpecification();
+            var spec = new ProductBrandandTypeSpecification(sort);
 
             var Products = await _ProductRepo.GetAllWithSpecAsync(spec);
             return Ok(_mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(Products));
