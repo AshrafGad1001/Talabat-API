@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Talabat.APIs.Errors;
+using Talabat.APIs.Helpers;
 using Talabat.core.Entities;
 using Talabat.core.Repositorires;
 using Talabat.core.Specifications;
@@ -30,12 +31,16 @@ namespace Talabat.Controllers
 
         //Api/Controller
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts([FromQuery]ProductSpecParms productParms)
+        public async Task<ActionResult<Pagination<ProductDTO>>> GetProducts([FromQuery] ProductSpecParms productParms)
         {
             var spec = new ProductBrandandTypeSpecification(productParms);
 
             var Products = await _ProductRepo.GetAllWithSpecAsync(spec);
-            return Ok(_mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(Products));
+            var Data = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(Products);
+            var countSpec = new ProductWithFiltersForCountSpecfication(productParms);
+            var count = await _ProductRepo.GetCountAsync(spec);
+
+            return Ok(new Pagination<ProductDTO>(productParms.pageIndex, productParms.PageSize,count, Data));
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductDTO>> GetProductById(int id)

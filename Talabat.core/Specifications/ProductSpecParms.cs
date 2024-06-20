@@ -7,7 +7,7 @@
         public int? BrandId { get; set; }
         public int? TypeId { get; set; }
 
-        private int pageSize = 10;
+        private int pageSize { get; set; } = 10;
         public int PageSize
         {
             get { return pageSize; }
