@@ -16,3 +16,21 @@ F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Repositery\obj\Debug\ne
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.pdb
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.genruntimeconfig.cache
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Repositery\obj\Debug\net8.0\ref\Talabat.Repository.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\bin\Debug\net8.0\Talabat.Repository.deps.json
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\bin\Debug\net8.0\Talabat.Repository.runtimeconfig.json
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\bin\Debug\net8.0\Talabat.Repository.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\bin\Debug\net8.0\Talabat.Repository.pdb
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\bin\Debug\net8.0\Talabat.core.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\bin\Debug\net8.0\Talabat.core.pdb
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.csproj.AssemblyReference.cache
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.AssemblyInfoInputs.cache
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.AssemblyInfo.cs
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.csproj.CoreCompileInputs.cache
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.sourcelink.json
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.csproj.CopyComplete
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\refint\Talabat.Repository.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.pdb
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\Talabat.Repository.genruntimeconfig.cache
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Repositery\obj\Debug\net8.0\ref\Talabat.Repository.dll

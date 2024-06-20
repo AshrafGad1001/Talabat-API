@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Service\\Talabat.Service.csproj": {}
+    "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat.Service\\Talabat.Service.csproj": {}
   },
   "projects": {
-    "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Service\\Talabat.Service.csproj": {
+    "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat.Service\\Talabat.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Service\\Talabat.Service.csproj",
+        "projectUniqueName": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat.Service\\Talabat.Service.csproj",
         "projectName": "Talabat.Service",
-        "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Service\\Talabat.Service.csproj",
+        "projectPath": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat.Service\\Talabat.Service.csproj",
         "packagesPath": "C:\\Users\\SOFTLAPTOP\\.nuget\\packages\\",
-        "outputPath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Service\\obj\\",
+        "outputPath": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SOFTLAPTOP\\AppData\\Roaming\\NuGet\\NuGet.Config",

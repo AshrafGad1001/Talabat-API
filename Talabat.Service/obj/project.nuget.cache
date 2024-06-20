@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tUD1S04iUrbMlRbk14mIhKLmF9gTfu2Qshqtf/0Mw7gRMtlE2l7yAQU6jWH4+xv89G6wLLKLsJ/9FbygvS6tCQ==",
+  "dgSpecHash": "jpOvWJa/iM0wGKBW14e/P19oTe++2NFF8D7Y9ovyqCnx5M3/pm/nqzKveeBIKbfTbd/aFRuZAOVluc+ATbMMLQ==",
   "success": true,
-  "projectFilePath": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat.Service\\Talabat.Service.csproj",
+  "projectFilePath": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat.Service\\Talabat.Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

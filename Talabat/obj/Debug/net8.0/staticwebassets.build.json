@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mvygsQUpPN4avmJrsfs7Wezkaai42ylJej3G4ABiI/k=",
+  "Hash": "52eMdq66saI8Ks2GzX4OhVes+1J7qKSu1a/0FDH54ao=",
   "Source": "Talabat.APIs",
   "BasePath": "_content/Talabat.APIs",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Talabat.APIs\\wwwroot",
       "Source": "Talabat.APIs",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\apple.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\apple.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/apple.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\apple.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\avocado.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\avocado.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/avocado.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\avocado.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\banana.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\banana.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/banana.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\banana.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\bread.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\bread.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/bread.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\bread.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\broccoli.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\broccoli.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/broccoli.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\broccoli.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\carrot.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\carrot.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/carrot.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\carrot.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\cheese.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\cheese.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/cheese.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\cheese.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\chicken.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\chicken.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/chicken.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\chicken.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\cucumber.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\cucumber.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/cucumber.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\cucumber.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\eggs.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\eggs.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/eggs.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\eggs.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\lettuce.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\lettuce.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/lettuce.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\lettuce.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\milk.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\milk.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/milk.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\milk.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\orange.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\orange.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/orange.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\orange.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\pasta.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\pasta.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/pasta.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\pasta.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\potato.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\potato.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/potato.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\potato.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\rice.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\rice.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/rice.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\rice.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\salmon.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\salmon.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/salmon.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\salmon.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\spinach.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\spinach.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/spinach.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\spinach.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\tomato.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\tomato.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/tomato.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\tomato.png"
     },
     {
-      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\images\\products\\yogurt.png",
+      "Identity": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\images\\products\\yogurt.png",
       "SourceId": "Talabat.APIs",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\Talabat API\\Talabat\\wwwroot\\",
+      "ContentRoot": "F:\\Courses\\Training WebDev (BackEnd)\\8 Talabat API\\Talabat\\wwwroot\\",
       "BasePath": "_content/Talabat.APIs",
       "RelativePath": "images/products/yogurt.png",
       "AssetKind": "All",
