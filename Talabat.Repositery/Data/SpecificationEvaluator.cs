@@ -17,6 +17,10 @@ namespace Talabat.Repository.Data
                     query = query.Where(spec.Criteria);
 
                 }
+                if (spec.IsPaginationEnabled)
+                {
+                    query = query.Skip(spec.Skip).Take(spec.Take);
+                }
                 if (spec.OrderBy != null)
                 {
                     query = query.OrderBy(spec.OrderBy);

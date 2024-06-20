@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Talabat",
-    "\\Talabat.core",
-    "\\Talabat.core\\Specifications"
+    "\\Talabat.core\\Specifications",
+    "\\Talabat\\Controllers"
   ],
-  "SelectedNode": "\\Talabat.core\\Specifications\\ProductBrandandTypeSpecification.cs",
+  "SelectedNode": "\\Talabat\\Controllers\\ProductsController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -10,3 +10,15 @@ F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Service\obj\Debug\net8.
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Service\obj\Debug\net8.0\refint\Talabat.Service.dll
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.pdb
 F:\Courses\Training WebDev (BackEnd)\Talabat API\Talabat.Service\obj\Debug\net8.0\ref\Talabat.Service.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\bin\Debug\net8.0\Talabat.Service.deps.json
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\bin\Debug\net8.0\Talabat.Service.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\bin\Debug\net8.0\Talabat.Service.pdb
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.AssemblyInfoInputs.cache
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.AssemblyInfo.cs
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.csproj.CoreCompileInputs.cache
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.sourcelink.json
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\refint\Talabat.Service.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\Talabat.Service.pdb
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat.Service\obj\Debug\net8.0\ref\Talabat.Service.dll
