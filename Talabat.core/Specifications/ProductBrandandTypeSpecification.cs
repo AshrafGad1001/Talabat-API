@@ -5,7 +5,9 @@ namespace Talabat.core.Specifications
     public class ProductBrandandTypeSpecification : BaseSpecification<Product>
     {
         public ProductBrandandTypeSpecification(ProductSpecParms productParms)
-            : base(P => (!productParms.BrandId.HasValue || P.ProductBrandId == productParms.BrandId.Value) &&
+            : base(P =>
+                        (string.IsNullOrEmpty(productParms.Search) || P.Name.ToLower().Contains(productParms.Search)) &&
+                        (!productParms.BrandId.HasValue || P.ProductBrandId == productParms.BrandId.Value) &&
                         (!productParms.TypeId.HasValue || P.ProductTypeId == productParms.TypeId.Value)
                   )
         {

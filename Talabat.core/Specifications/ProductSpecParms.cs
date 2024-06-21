@@ -13,7 +13,12 @@
             get { return pageSize; }
             set { pageSize = value > MaxpageSize ? MaxpageSize : value; }
         }
-
+        private string? search;
+        public string? Search
+        {
+            get { return search; }
+            set { search = value.ToLower(); }
+        }
         public int pageIndex { get; set; } = 1;
     }
 }
