@@ -290,3 +290,9 @@ F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\obj\Debug\net8.0\Tala
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\obj\Debug\net8.0\ref\Talabat.APIs.dll
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\StackExchange.Redis.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

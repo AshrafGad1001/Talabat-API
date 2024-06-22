@@ -8,6 +8,7 @@ using Talabat.core.Repositorires;
 using Talabat.Helpers;
 using Talabat.Repositery.Data;
 using Talabat.Repository;
+using Talabat.Repository.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,11 +20,19 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var IdentityConnection = builder.Configuration.GetConnectionString("IdentityConnection");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(ConnectionString);
 });
+
+builder.Services.AddDbContext<AppIdentityDbContext>(options =>
+{
+    options.UseSqlServer(IdentityConnection);
+});
+
+
 builder.Services.AddSingleton<IConnectionMultiplexer>(S =>
 {
     var connection = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"));
@@ -42,6 +51,13 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
     await dbContext.Database.MigrateAsync();
     // Ensure the database is created and apply any pending migrations
     // Add your migration logic here (if needed)
+
+    var IdentiyContext = scope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
+    
+    await IdentiyContext.Database.MigrateAsync();
+
+
+
 
     await AppContextSeed.SeedAsync(dbContext, loggerFactory);
 

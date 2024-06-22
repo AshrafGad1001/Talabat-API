@@ -36,7 +36,7 @@ namespace Talabat.Controllers
             var spec = new ProductBrandandTypeSpecification(productParms);
 
             var Products = await _ProductRepo.GetAllWithSpecAsync(spec);
-            var Data = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(Products);
+            var Data = _mapper.Map<IEnumerable<Product>, IReadOnlyList<ProductDTO>>(Products);
             var countSpec = new ProductWithFiltersForCountSpecfication(productParms);
             var count = await _ProductRepo.GetCountAsync(spec);
 
@@ -54,13 +54,13 @@ namespace Talabat.Controllers
             return Ok(_mapper.Map<Product, ProductDTO>(product));
         }
         [HttpGet("brands")]
-        public async Task<ActionResult<IEnumerable<ProductBrand>>> GetBrands()
+        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
         {
             var brands = await _brandsRepo.GetAllAsync();
             return Ok(brands);
         }
         [HttpGet("types")]
-        public async Task<ActionResult<IEnumerable<ProductBrand>>> GetTypes()
+        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetTypes()
         {
             var types = await _typesRepo.GetAllAsync();
             return Ok(types);

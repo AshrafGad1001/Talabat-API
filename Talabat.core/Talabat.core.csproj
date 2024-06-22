@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Talabat.Repositery">
       <HintPath>..\Talabat.Repositery\bin\Debug\net8.0\Talabat.Repositery.dll</HintPath>
     </Reference>
