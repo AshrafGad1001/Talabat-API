@@ -31,7 +31,7 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(S =>
 });
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
+builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
 
 using (var scope = builder.Services.BuildServiceProvider().CreateScope())
 {

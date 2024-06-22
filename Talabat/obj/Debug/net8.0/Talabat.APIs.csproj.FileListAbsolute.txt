@@ -288,3 +288,5 @@ F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\obj\Debug\net8.0\scop
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\obj\Debug\net8.0\Talabat.APIs.csproj.CopyComplete
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\obj\Debug\net8.0\Talabat.APIs.genruntimeconfig.cache
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\obj\Debug\net8.0\ref\Talabat.APIs.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\StackExchange.Redis.dll
