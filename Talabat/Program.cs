@@ -1,14 +1,17 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using StackExchange.Redis;
 using Talabat.APIs.Errors;
+using Talabat.APIs.Extensions;
 using Talabat.APIs.Middlewares;
+using Talabat.core.Entities.Identity;
 using Talabat.core.Repositorires;
 using Talabat.Helpers;
 using Talabat.Repositery.Data;
 using Talabat.Repository;
 using Talabat.Repository.Identity;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,7 +56,7 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
     // Add your migration logic here (if needed)
 
     var IdentiyContext = scope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
-    
+
     await IdentiyContext.Database.MigrateAsync();
 
 
@@ -63,10 +66,19 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
 
     await dbContext.Database.EnsureCreatedAsync();
     // Ensure the database is created if it doesn't exist asynchronously
+
+    //----------
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
+    await AppIdentityDbContextSeed.SeedUserAsync(userManager);
+
+
 }
 
 
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
+
+builder.Services.AddIdentityServices();
+
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
@@ -95,7 +107,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
