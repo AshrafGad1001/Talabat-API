@@ -9,8 +9,6 @@ using Talabat.DTOs;
 
 namespace Talabat.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _ProductRepo;

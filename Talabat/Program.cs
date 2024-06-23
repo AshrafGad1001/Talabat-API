@@ -44,6 +44,9 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(S =>
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
+builder.Services.AddIdentityServices();
+
 
 using (var scope = builder.Services.BuildServiceProvider().CreateScope())
 {
@@ -75,9 +78,7 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
 }
 
 
-builder.Services.AddAutoMapper(typeof(MappingProfiles));
 
-builder.Services.AddIdentityServices();
 
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>

@@ -5,8 +5,6 @@ using Talabat.core.Repositorires;
 
 namespace Talabat.APIs.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class CartController : BaseApiController
     {
         private readonly ICartRepository _cartRepository;
