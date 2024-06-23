@@ -296,3 +296,5 @@ F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Micr
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Talabat.Service.dll
+F:\Courses\Training WebDev (BackEnd)\8 Talabat API\Talabat\bin\Debug\net8.0\Talabat.Service.pdb

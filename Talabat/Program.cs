@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -5,12 +6,14 @@ using StackExchange.Redis;
 using Talabat.APIs.Errors;
 using Talabat.APIs.Extensions;
 using Talabat.APIs.Middlewares;
+using Talabat.APIs.Services;
 using Talabat.core.Entities.Identity;
 using Talabat.core.Repositorires;
 using Talabat.Helpers;
 using Talabat.Repositery.Data;
 using Talabat.Repository;
 using Talabat.Repository.Identity;
+using Talabat.Service;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,12 +45,12 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(S =>
     return ConnectionMultiplexer.Connect(connection);
 });
 
+builder.Services.AddScoped<ITokenServices, TokenService>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
 builder.Services.AddIdentityServices();
-
-
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 using (var scope = builder.Services.BuildServiceProvider().CreateScope())
 {
     var loggerFactory = scope.ServiceProvider.GetRequiredService<ILoggerFactory>();

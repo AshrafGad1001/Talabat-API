@@ -12,7 +12,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.5",
           "Swashbuckle.AspNetCore": "6.6.1",
-          "Talabat.Repository": "1.0.0"
+          "Talabat.Repository": "1.0.0",
+          "Talabat.Service": "1.0.0.0"
         },
         "runtime": {
           "Talabat.APIs.dll": {}
@@ -1024,6 +1025,14 @@
         "runtime": {
           "Talabat.Repository.dll": {}
         }
+      },
+      "Talabat.Service/1.0.0.0": {
+        "runtime": {
+          "Talabat.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1656,6 +1665,11 @@
     },
     "Talabat.Repository/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Talabat.Service/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
