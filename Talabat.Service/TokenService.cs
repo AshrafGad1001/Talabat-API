@@ -11,7 +11,7 @@ namespace Talabat.Service
 {
     public class TokenService : ITokenServices
     {
-        public IConfiguration Configuration { get; }
+        private readonly IConfiguration Configuration;
 
         public TokenService(IConfiguration configuration)
         {
@@ -28,10 +28,12 @@ namespace Talabat.Service
             };
 
             var userRoles = await userManager.GetRolesAsync(user);
-
-            foreach (var role in userRoles)
+            if (userRoles != null)
             {
-                authClaims.Add(new Claim(ClaimTypes.Role, role));
+                foreach (var role in userRoles)
+                {
+                    authClaims.Add(new Claim(ClaimTypes.Role, role.ToString()));
+                }
             }
 
             //Secret Key

@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Talabat.APIs.Errors;
 using Talabat.APIs.Helpers;
@@ -9,6 +11,7 @@ using Talabat.DTOs;
 
 namespace Talabat.Controllers
 {
+    
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _ProductRepo;
@@ -28,6 +31,7 @@ namespace Talabat.Controllers
         }
 
         //Api/Controller
+        [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         public async Task<ActionResult<Pagination<ProductDTO>>> GetProducts([FromQuery] ProductSpecParms productParms)
         {

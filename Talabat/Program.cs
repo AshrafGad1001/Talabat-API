@@ -49,8 +49,10 @@ builder.Services.AddScoped<ITokenServices, TokenService>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
-builder.Services.AddIdentityServices();
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+builder.Services.AddIdentityServices(builder.Configuration);
+
+
+
 using (var scope = builder.Services.BuildServiceProvider().CreateScope())
 {
     var loggerFactory = scope.ServiceProvider.GetRequiredService<ILoggerFactory>();
@@ -114,6 +116,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
