@@ -10,16 +10,15 @@ namespace Talabat.APIs.Extensions
 {
     public static class IdentityServicesExtensions
     {
-        public static IServiceCollection AddIdentityServices(this IServiceCollection service,IConfiguration configuration)
+        public static IServiceCollection AddIdentityServices(this IServiceCollection service, IConfiguration configuration)
         {
             service.AddIdentity<AppUser, IdentityRole>(options =>
             {
 
             }).AddEntityFrameworkStores<AppIdentityDbContext>();
-            //.AddDefaultTokenProviders();
+           
 
-            //JwtBearerDefaults.AuthenticationScheme
-            service.AddAuthentication()
+            service.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddJwtBearer(options =>
                    {
                        options.TokenValidationParameters = new TokenValidationParameters()
@@ -31,6 +30,7 @@ namespace Talabat.APIs.Extensions
                            ValidateIssuerSigningKey = true,
                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"])),
                            ValidateLifetime = true,
+                           ClockSkew = TimeSpan.Zero // Optional: This reduces the time window for token expiration
                        };
                    });
 
