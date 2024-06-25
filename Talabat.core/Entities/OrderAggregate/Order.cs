@@ -8,7 +8,7 @@
 
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
 
-        public Addrress ShippingAddress { get; set; }
+        public Address ShippingAddress { get; set; }
         public DeliveryMethod DeliveryMethod { get; set; }
         public ICollection<OrderItem> Items { get; set; }
         public string PaymentIntendId { get; set; }
@@ -23,7 +23,7 @@
         {
 
         }
-        public Order(string customerEmail, Addrress shippingAddress,
+        public Order(string customerEmail, Address shippingAddress,
             DeliveryMethod deliveryMethod, ICollection<OrderItem> items,
             decimal subTotal)
         {
