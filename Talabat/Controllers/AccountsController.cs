@@ -29,7 +29,6 @@ namespace Talabat.APIs.Controllers
             this._mapper = mapper;
         }
 
-
         [HttpPost("login")]
         public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDTO)
         {
@@ -51,6 +50,15 @@ namespace Talabat.APIs.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UserDTO>> Register(RegisterDTO registerDTO)
         {
+            if (CheackEmailExists(registerDTO.Email).Result.Value)
+            {
+                return BadRequest(new ApiValidationErrorReponse()
+                {
+                    Errors = new[] { "This Email Already Regisiter" }
+                });
+            }
+
+
             var user = new AppUser()
             {
                 DisplayName = registerDTO.DisplayName,
@@ -101,7 +109,6 @@ namespace Talabat.APIs.Controllers
 
         }
 
-
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut("address")]
         public async Task<ActionResult<AddressDTO>> UpdateAddress(AddressDTO oldAddress)
@@ -127,9 +134,6 @@ namespace Talabat.APIs.Controllers
         /// public ClaimsPrincipal User => HttpContext?.User!;
         /// User From ControllerBase
         /// </summary>
-
-
-
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("address")]
         public async Task<ActionResult<AddressDTO>> GetUserAddress()
@@ -139,6 +143,10 @@ namespace Talabat.APIs.Controllers
 
         }
 
-
+        [HttpGet("emailExists")]
+        public async Task<ActionResult<bool>> CheackEmailExists(string email)
+        {
+            return await _userManager.FindByEmailAsync(email) != null;
+        }
     }
 }
