@@ -6,7 +6,7 @@
 
         public DateTimeOffset OrderDate { get; set; } = DateTimeOffset.Now;
 
-        public OrderStatus Status { get; set; }
+        public OrderStatus Status { get; set; } = OrderStatus.Pending;
 
         public Addrress ShippingAddress { get; set; }
         public DeliveryMethod DeliveryMethod { get; set; }
@@ -17,5 +17,21 @@
 
         public decimal GetTotal()
             => SubTotal + DeliveryMethod.Cost;
+
+
+        public Order()
+        {
+
+        }
+        public Order(string customerEmail, Addrress shippingAddress,
+            DeliveryMethod deliveryMethod, ICollection<OrderItem> items,
+            decimal subTotal)
+        {
+            this.CustomerEmail = customerEmail;
+            this.ShippingAddress = shippingAddress;
+            this.DeliveryMethod = deliveryMethod;
+            this.Items = items;
+            this.SubTotal = subTotal;
+        }
     }
 }
