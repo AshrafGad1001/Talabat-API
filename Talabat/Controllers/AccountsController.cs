@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Talabat.APIs.DTOs;
 using Talabat.APIs.Errors;
+using Talabat.APIs.Extensions;
 using Talabat.APIs.Services;
 using Talabat.Controllers;
 using Talabat.core.Entities.Identity;
@@ -16,13 +18,15 @@ namespace Talabat.APIs.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _siginInManager;
         private readonly ITokenServices _tokenService;
+        private readonly IMapper _mapper;
 
         public AccountsController(UserManager<AppUser> userManager, SignInManager<AppUser> siginInManager,
-            ITokenServices _tokenService)
+            ITokenServices _tokenService, IMapper mapper)
         {
             this._userManager = userManager;
             this._siginInManager = siginInManager;
             this._tokenService = _tokenService;
+            this._mapper = mapper;
         }
 
 
@@ -94,6 +98,27 @@ namespace Talabat.APIs.Controllers
                 //This Temp Untill Store Token In DB 
                 Token = await _tokenService.CreateToken(user, _userManager)
             });
+
+        }
+
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpPut("address")]
+        public async Task<ActionResult<AddressDTO>> UpdateAddress(AddressDTO oldAddress)
+        {
+  
+            var UpdatedAddress = _mapper.Map<AddressDTO, Address>(oldAddress);
+
+            var appuser = await _userManager.FindUserWithAddressByEmailAsync(User);
+
+            appuser.Address = UpdatedAddress;
+            var Result = await _userManager.UpdateAsync(appuser);
+            if (!Result.Succeeded)
+                return BadRequest(new ApiResponse(400, "Error Occured During Update Address"));
+
+
+
+            return Ok(_mapper.Map<Address, AddressDTO>(appuser.Address)) ;
 
         }
     }
