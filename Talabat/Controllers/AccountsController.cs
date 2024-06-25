@@ -106,7 +106,7 @@ namespace Talabat.APIs.Controllers
         [HttpPut("address")]
         public async Task<ActionResult<AddressDTO>> UpdateAddress(AddressDTO oldAddress)
         {
-  
+
             var UpdatedAddress = _mapper.Map<AddressDTO, Address>(oldAddress);
 
             var appuser = await _userManager.FindUserWithAddressByEmailAsync(User);
@@ -118,8 +118,27 @@ namespace Talabat.APIs.Controllers
 
 
 
-            return Ok(_mapper.Map<Address, AddressDTO>(appuser.Address)) ;
+            return Ok(_mapper.Map<Address, AddressDTO>(appuser.Address));
 
         }
+
+        /// <summary>
+        /// Gets the <see cref="ClaimsPrincipal"/> for user associated with the executing action.
+        /// public ClaimsPrincipal User => HttpContext?.User!;
+        /// User From ControllerBase
+        /// </summary>
+
+
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpGet("address")]
+        public async Task<ActionResult<AddressDTO>> GetUserAddress()
+        {
+            var appuser = await _userManager.FindUserWithAddressByEmailAsync(User);
+            return Ok(_mapper.Map<Address, AddressDTO>(appuser.Address));
+
+        }
+
+
     }
 }
