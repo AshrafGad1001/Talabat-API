@@ -20,6 +20,8 @@ namespace Talabat.Repository.Data.Config
                       );
 
             builder.HasMany(O=>O.Items).WithOne().OnDelete(DeleteBehavior.Cascade);
+
+            //builder.Property(O=>O.SubTotal).HasColumnType("decimal(18,2)");
         }
     }
 }

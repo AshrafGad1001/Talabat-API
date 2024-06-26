@@ -10,6 +10,9 @@ namespace Talabat.Repository.Data.Config
         {
             builder.OwnsOne(orderitem => orderitem.Product, OI => OI.WithOwner());
 
+            builder.Property(OI => OI.Price)
+                .HasColumnType("decimal(18.2)");
+
         }
     }
 }

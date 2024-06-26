@@ -17,6 +17,9 @@ namespace Talabat.Repositery.Data.Config
 
             builder.HasOne(p => p.ProductType).WithMany()
                 .HasForeignKey(p=>p.ProductTypeId);
+
+            builder.Property(P=>P.Price)
+                .HasColumnType("decimal(18,2)");
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using System.Text.Json;
 using Talabat.core.Entities;
+using Talabat.core.Entities.OrderAggregate;
 
 namespace Talabat.Repositery.Data
 {
@@ -49,7 +50,24 @@ namespace Talabat.Repositery.Data
                         }
                     }
                 }
-                await context.SaveChangesAsync();
+
+                if (!context.DeliveryMethods.Any())
+                {
+                    var DeliveryMethodData = File.ReadAllText("../Talabat.Repositery/Data/DataSeed/delivery.json");
+                    var DeliveryMethods = JsonSerializer.Deserialize<List<DeliveryMethod>>(DeliveryMethodData);
+
+                    if(DeliveryMethods is not null)
+                    {
+                        foreach (var DM in DeliveryMethods)
+                        {
+                            context.Set<DeliveryMethod>().Add(DM);
+                        }
+                    }
+                }
+
+
+
+                    await context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
