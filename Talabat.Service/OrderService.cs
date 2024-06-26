@@ -50,6 +50,9 @@ namespace Talabat.Service
             await _ordersRepo.CreateAsync(order);
 
             //--- Save in Database ----
+
+
+            return order;
         }
 
         public Task<IReadOnlyList<DeliveryMethod>> GetDeliveryMethodsAsync()

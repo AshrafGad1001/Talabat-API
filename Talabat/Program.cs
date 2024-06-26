@@ -9,6 +9,7 @@ using Talabat.APIs.Middlewares;
 using Talabat.APIs.Services;
 using Talabat.core.Entities.Identity;
 using Talabat.core.Repositorires;
+using Talabat.core.Services;
 using Talabat.Helpers;
 using Talabat.Repositery.Data;
 using Talabat.Repository;
@@ -48,6 +49,7 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(S =>
 builder.Services.AddScoped<ITokenServices, TokenService>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
+builder.Services.AddScoped(typeof(IOrderService), typeof(OrderService));
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
 builder.Services.AddIdentityServices(builder.Configuration);
 
