@@ -8,29 +8,43 @@ namespace Talabat.Service
     public class OrderService : IOrderService
     {
         private readonly ICartRepository _cartRepository;
-        private readonly IGenericRepository<Product> _productRepo;
-        private readonly IGenericRepository<DeliveryMethod> _deliveryMethodsRepo;
-        private readonly IGenericRepository<Order> _ordersRepo;
+        private readonly IUnitOfWork _unitOfWork;
+        //private readonly IGenericRepository<Product> _productRepo;
+        //private readonly IGenericRepository<DeliveryMethod> _deliveryMethodsRepo;
+        //private readonly IGenericRepository<Order> _ordersRepo;
 
-        public OrderService(ICartRepository cartRepository
-            , IGenericRepository<Product> productRepo,
-            IGenericRepository<DeliveryMethod> DeliveryMethodsRepo,
-            IGenericRepository<Order> OrdersRepo)
+        public OrderService(ICartRepository cartRepository,
+            IUnitOfWork unitOfWork)
+        //, IGenericRepository<Product> productRepo,
+        //IGenericRepository<DeliveryMethod> DeliveryMethodsRepo,
+        //IGenericRepository<Order> OrdersRepo)
         {
             this._cartRepository = cartRepository;
-            this._productRepo = productRepo;
-            this._deliveryMethodsRepo = DeliveryMethodsRepo;
-            this._ordersRepo = OrdersRepo;
+            this._unitOfWork = unitOfWork;
+            //this._productRepo = productRepo;
+            //this._deliveryMethodsRepo = DeliveryMethodsRepo;
+            //this._ordersRepo = OrdersRepo;
         }
 
         public async Task<Order> CreateOrderAsync(string customerEmail, string cartId, int deliveryMethod, Address shippingAddress)
         {
+            // Retrieve the cart by ID
             var cart = await _cartRepository.GetCartAsync(cartId);
+            if (cart == null)
+            {
+                throw new Exception("Cart not found.");
+            }
+
 
             var orderItems = new List<OrderItem>();
             foreach (var item in cart.Items)
             {
-                var product = await _productRepo.GetByIdAsync(item.Id);
+                // Retrieve product details from the database
+                var product = await _unitOfWork.Repository<Product>().GetByIdAsync(item.Id);
+                if (product == null)
+                {
+                    throw new Exception($"Product with ID {item.Id} not found.");
+                }
 
                 //To Ensure Information From DB
                 var productitemordered = new ProductItemOrdered(product.Id, product.Name, product.PictureUrl);
@@ -42,15 +56,24 @@ namespace Talabat.Service
 
             //Calc SubTotal
             var subTotal = orderItems.Sum(item => item.Price * item.Quantity);
+            // Retrieve the delivery method by ID
             //DeliveryMethod
-            var DM = await _deliveryMethodsRepo.GetByIdAsync(deliveryMethod);
+            var DM = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync(deliveryMethod);
+            if (DM == null)
+            {
+                throw new Exception("Delivery method not found.");
+            }
             //Create Order
+
             // DM => deliveryMethod
             var order = new Order(customerEmail, shippingAddress, DM, orderItems, subTotal);
-            await _ordersRepo.CreateAsync(order);
+            await _unitOfWork.Repository<Order>().CreateAsync(order);
 
             //--- Save in Database ----
 
+            var result = await _unitOfWork.Complete();
+            if (result <= 0)
+                return null;
 
             return order;
         }

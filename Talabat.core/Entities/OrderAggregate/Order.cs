@@ -11,7 +11,7 @@
         public Address ShippingAddress { get; set; }
         public DeliveryMethod DeliveryMethod { get; set; }
         public ICollection<OrderItem> Items { get; set; }
-        public string PaymentIntendId { get; set; }
+        public string? PaymentIntendId { get; set; }
 
         public decimal SubTotal { get; set; }
 

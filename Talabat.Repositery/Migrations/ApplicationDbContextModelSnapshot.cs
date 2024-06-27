@@ -102,7 +102,6 @@ namespace Talabat.Repositery.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("PaymentIntendId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ShippingAddressId")

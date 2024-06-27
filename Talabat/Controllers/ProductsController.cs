@@ -11,7 +11,7 @@ using Talabat.DTOs;
 
 namespace Talabat.Controllers
 {
-    
+
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _ProductRepo;
@@ -31,7 +31,7 @@ namespace Talabat.Controllers
         }
 
         //Api/Controller
-        [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         public async Task<ActionResult<Pagination<ProductDTO>>> GetProducts([FromQuery] ProductSpecParms productParms)
         {
@@ -42,7 +42,7 @@ namespace Talabat.Controllers
             var countSpec = new ProductWithFiltersForCountSpecfication(productParms);
             var count = await _ProductRepo.GetCountAsync(spec);
 
-            return Ok(new Pagination<ProductDTO>(productParms.pageIndex, productParms.PageSize,count, Data));
+            return Ok(new Pagination<ProductDTO>(productParms.pageIndex, productParms.PageSize, count, Data));
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductDTO>> GetProductById(int id)

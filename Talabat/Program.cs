@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -47,6 +46,7 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(S =>
 });
 
 builder.Services.AddScoped<ITokenServices, TokenService>();
+builder.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
 builder.Services.AddScoped(typeof(IOrderService), typeof(OrderService));
@@ -84,7 +84,10 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
 
 }
 
-
+// Add logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
 
 
 
