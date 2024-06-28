@@ -26,8 +26,6 @@ namespace Talabat.APIs.Controllers
             this._mapper = mapper;
             this._logger = logger;
         }
-
-
         [HttpPost]
         public async Task<ActionResult<Order>> CreateOrder(OrderDTO orderDTO)
         {
@@ -54,5 +52,17 @@ namespace Talabat.APIs.Controllers
                 return StatusCode(500, "An error occurred while processing your request.");
             }
         }
+
+
+        [HttpGet]
+        public async Task<ActionResult<IReadOnlyList<Order>>> GetOrdersForUser()
+        {
+            var customerEmail = User.FindFirstValue(ClaimTypes.Email);
+
+            var orders =await _orderService.GetOrdersForUserAsync(customerEmail);
+
+            return Ok(orders);
+        }
+
     }
 }
