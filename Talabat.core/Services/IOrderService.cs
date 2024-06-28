@@ -9,7 +9,7 @@ namespace Talabat.core.Services
 
         Task<IReadOnlyList<Order>> GetOrdersForUserAsync(string customerEmail);
 
-        Task<Order> GetOrderByIdForUserAsync(string orderId, string customerEmail);
+        Task<Order> GetOrderByIdForUserAsync(int orderId, string customerEmail);
 
         Task<IReadOnlyList<DeliveryMethod>> GetDeliveryMethodsAsync();
     }

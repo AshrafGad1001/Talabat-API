@@ -12,5 +12,11 @@ namespace Talabat.core.Specifications
 
             AddOrderByDescending(O => O.OrderDate);
         }
+        public OrderWithItemsandDMSpecifications(int orderId, string customerEmail)
+                        : base(O => O.CustomerEmail == customerEmail && O.Id == orderId)
+        {
+            Includes.Add(O => O.DeliveryMethod);
+            Includes.Add(O => O.Items);
+        }
     }
 }

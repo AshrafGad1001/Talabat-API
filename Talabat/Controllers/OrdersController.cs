@@ -59,9 +59,22 @@ namespace Talabat.APIs.Controllers
         {
             var customerEmail = User.FindFirstValue(ClaimTypes.Email);
 
-            var orders =await _orderService.GetOrdersForUserAsync(customerEmail);
+            var orders = await _orderService.GetOrdersForUserAsync(customerEmail);
 
             return Ok(orders);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Order>> GetOrderForUser(int id)
+        {
+            var customerEmail = User.FindFirstValue(ClaimTypes.Email);
+
+            var order = await _orderService.GetOrderByIdForUserAsync(id, customerEmail);
+
+            if (order == null)
+                return BadRequest(new ApiResponse(400));
+
+            return Ok(order);
         }
 
     }
