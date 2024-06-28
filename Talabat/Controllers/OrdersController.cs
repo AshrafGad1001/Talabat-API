@@ -27,7 +27,7 @@ namespace Talabat.APIs.Controllers
             this._logger = logger;
         }
         [HttpPost]
-        public async Task<ActionResult<Order>> CreateOrder(OrderDTO orderDTO)
+        public async Task<ActionResult<OrderReturnDTO>> CreateOrder(OrderDTO orderDTO)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace Talabat.APIs.Controllers
                 if (order == null)
                     return BadRequest(new ApiResponse(400, "Find Issue In OrderProcessind"));
 
-                return Ok(order);
+                return Ok(_mapper.Map<Order, OrderReturnDTO>(order));
             }
             catch (Exception ex)
             {
@@ -53,16 +53,16 @@ namespace Talabat.APIs.Controllers
             }
         }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<Order>>> GetOrdersForUser()
+        public async Task<ActionResult<IReadOnlyList<OrderReturnDTO>>> GetOrdersForUser()
         {
             var customerEmail = User.FindFirstValue(ClaimTypes.Email);
 
             var orders = await _orderService.GetOrdersForUserAsync(customerEmail);
 
-            return Ok(orders);
+            return Ok(_mapper.Map<IReadOnlyList<Order>, IReadOnlyList<OrderReturnDTO>>(orders));
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<Order>> GetOrderForUser(int id)
+        public async Task<ActionResult<OrderReturnDTO>> GetOrderForUser(int id)
         {
             var customerEmail = User.FindFirstValue(ClaimTypes.Email);
 
@@ -71,7 +71,7 @@ namespace Talabat.APIs.Controllers
             if (order == null)
                 return BadRequest(new ApiResponse(400));
 
-            return Ok(order);
+            return Ok(_mapper.Map<Order, OrderReturnDTO>(order));
         }
         [HttpGet("deliveryMethods")]
         public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods()

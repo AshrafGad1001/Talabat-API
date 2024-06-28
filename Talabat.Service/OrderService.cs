@@ -35,7 +35,11 @@ namespace Talabat.Service
             {
                 throw new Exception("Cart not found.");
             }
-
+            // Check  shippingAddress 
+            if (shippingAddress == null)
+            {
+                throw new Exception("Shipping address is required.");
+            }
 
             var orderItems = new List<OrderItem>();
             foreach (var item in cart.Items)
@@ -64,6 +68,8 @@ namespace Talabat.Service
             {
                 throw new Exception("Delivery method not found.");
             }
+
+
             //Create Order
 
             // DM => deliveryMethod

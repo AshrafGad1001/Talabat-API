@@ -18,12 +18,31 @@ namespace Talabat.Helpers
 
 
 
-            CreateMap<AddressDTO, core.Entities.Identity.Address>().ReverseMap();
+            CreateMap<AddressDTO, core.Entities.Identity.Address>().ReverseMap()
+                 .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.FirstName))
+                 .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.LastName))
+                 .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.Country))
+                 .ForMember(dest => dest.City, opt => opt.MapFrom(src => src.City))
+                 .ForMember(dest => dest.street, opt => opt.MapFrom(src => src.street)); ;
+
+
+
 
             CreateMap<CustomerCartDTO, CustomerCart>();
             CreateMap<CartItemDTO, CartItem>();
 
             CreateMap<AddressDTO, core.Entities.OrderAggregate.Address>();
+
+
+            CreateMap<Order, OrderReturnDTO>()
+                    .ForMember(d => d.DeliveryMethod, O => O.MapFrom(s => s.DeliveryMethod.ShortName))
+                    .ForMember(d => d.DeliveryMethodCost, O => O.MapFrom(s => s.DeliveryMethod.Cost));
+
+
+            CreateMap<OrderItem, OrderItemDTO>()
+                .ForMember(d => d.ProductId, o => o.MapFrom(s => s.Product.ProductId))
+                .ForMember(d => d.ProductName, o => o.MapFrom(s => s.Product.ProductName))
+                .ForMember(d => d.PictureUrl, o => o.MapFrom(s => s.Product.PictureUrl));
 
         }
     }
