@@ -52,8 +52,6 @@ namespace Talabat.APIs.Controllers
                 return StatusCode(500, "An error occurred while processing your request.");
             }
         }
-
-
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<Order>>> GetOrdersForUser()
         {
@@ -63,7 +61,6 @@ namespace Talabat.APIs.Controllers
 
             return Ok(orders);
         }
-
         [HttpGet("{id}")]
         public async Task<ActionResult<Order>> GetOrderForUser(int id)
         {
@@ -76,6 +73,11 @@ namespace Talabat.APIs.Controllers
 
             return Ok(order);
         }
-
+        [HttpGet("deliveryMethods")]
+        public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods()
+        {
+            var deliveryMethod = _orderService.GetDeliveryMethodsAsync();
+            return Ok(deliveryMethod);
+        }
     }
 }
